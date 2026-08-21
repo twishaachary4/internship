@@ -1,99 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSIGNMENT</title>
-    <h1><center>TRAVEL GUIDE</center></h1>
-    <body bgcolor="black">
-    <h3><center>Welcome to the ultimate travel partner.</center></h3>
-    <b><i><center>crazy fun experience!</center></i></b>
+
+    <title>Travel Guide</title>
+
+    <style>
+
+        body {
+            background-color: #111111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffcc66;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #ffcc66;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #eeeeee;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #555555;
+            margin: 30px auto;
+        }
+
+        /* Dropdown */
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #222222;
+            color: white;
+            border: 1px solid #777777;
+            border-radius: 5px;
+        }
+
+        /* Table */
+
+        table {
+            margin: 25px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th {
+            background-color: #444444;
+            color: #ffcc66;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #666666;
+        }
+
+        tr:hover {
+            background-color: #292929;
+        }
+
+        /* Maps */
+
+        .map {
+            margin: 20px auto 40px;
+        }
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            max-width: 90%;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        /* Image */
+
+        img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Video */
+
+        video {
+            width: 500px;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+
+        /* Links */
+
+        a {
+            color: #ffcc66;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #222222;
+            color: #aaaaaa;
+        }
+
+    </style>
+
 </head>
-    <center>Select your destination:</center>
-        <center><select>
+
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <h1>TRAVEL GUIDE</h1>
+
+        <h3>Welcome to the ultimate travel partner.</h3>
+
+        <b>
+            <i>Crazy fun experience!</i>
+        </b>
+
+
+        <hr>
+
+
+        <!-- Destination Selection -->
+
+        <h2>Select Your Destination</h2>
+
+        <select>
             <option>Paris</option>
             <option>London</option>
             <option>Tokyo</option>
-            <option>seoul</option>
+            <option>Seoul</option>
             <option>Dubai</option>
-        </select></center>
-        <center><table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-            <tr>
-                <th>place</th>
-                <th>timing</th>
-                <th>entry fee</th>
-            </tr>
-        </thead>
-        
-        <tbody>
-            <tr>
-                <td>eiffel tower</td>
-                <td>9:00 AM - 10:00 PM</td>
-                <td>$800</td>
-            </tr>
-            <tr>
-                <td>london eye</td>
-                <td>10:00 AM - 9:00 PM</td>
-                <td>$500</td>
-            
-            </tr>
-            <tr>
-                <td>tokyo tower</td>
-                <td>9:00 AM - 11:00 PM</td>
-                <td>$600</td>   
-            </tr>   
-           
-            <tr>        
-                <td>gyeongbokgung palace</td>
-                <td>9:00 AM - 5:00 PM</td>
-                <td>$400</td>
-            </tr>   
-            <tr>
-                <td>burj khalifa</td>
-                <td>10:00 AM - 11:00 PM</td>
-                <td>$900</td>
-            </tr>   
-
-        </tbody>
-
-    </table></center>
-    <h1><center>Maps</center></h1>
-
-    <center><i><h3>PARIS</h3></i></center>
-    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991624607563!2d2.294481299999987!3d48.8583701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1787076270906!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="30"
-    height="30"></iframe></center>
+        </select>
 
 
-    <center><i><h3>London</h3></i></center>
-    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5466479523775!2d-0.11951919999999999!3d51.5031864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sLondon%20Eye!5e0!3m2!1sen!２sin!４v１７８７０７６３７０９１６!５m２!１sen!２sin   " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="30"
-    height="30"></iframe></center>
+        <!-- Travel Information Table -->
+
+        <h2>Popular Tourist Places</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Place</th>
+                    <th>Timing</th>
+                    <th>Entry Fee</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Eiffel Tower</td>
+                    <td>9:00 AM - 10:00 PM</td>
+                    <td>$800</td>
+                </tr>
+
+                <tr>
+                    <td>London Eye</td>
+                    <td>10:00 AM - 9:00 PM</td>
+                    <td>$500</td>
+                </tr>
+
+                <tr>
+                    <td>Tokyo Tower</td>
+                    <td>9:00 AM - 11:00 PM</td>
+                    <td>$600</td>
+                </tr>
+
+                <tr>
+                    <td>Gyeongbokgung Palace</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                    <td>$400</td>
+                </tr>
+
+                <tr>
+                    <td>Burj Khalifa</td>
+                    <td>10:00 AM - 11:00 PM</td>
+                    <td>$900</td>
+                </tr>
+
+            </tbody>
+
+        </table>
 
 
-    <center><i><h3>Tokyo</h3></i></center>
-    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479746645863!2d139.7454329!3d35.6585805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2sTokyo%20Tower!5e0!3m2!１sen!２sin!４v１７８７０７６４４３５３５!５m２!１sen!２sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="30"
-    height="30"></iframe></center>
+        <hr>
 
 
+        <!-- Maps -->
+
+        <h1>Maps</h1>
 
 
-    <center><i><h3>Seoul</h3></i></center>   
-    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.957561691954!2d126.977041!3d37.579617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2sGyeongbokgung%20Palace!5e0!3m2!1sen!2sin!4v1787076509111!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="30"
-    height="30"></iframe></center>
+        <div class="map">
 
-    
-    <center><i><h3>Dubai</h3></i></center>
-    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1786534495045!2d55.27437639999999!3d25.197197!2m3!1f0!2f0!3f0!3m2!１i１０２４!２i７６８!４f１３.１!３m３!１m２!１s０x３e５f４３３４８a６７e２４b%３A０xｆｆ４５e５０２e１ceb７e２!２sBurj%２0Khalifa!５e０!３m２!１sen!２sin!４v１７８７０７６５６３９２４!５m２!１sen!２sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="30"
-    height="30"></iframe></center>
+            <h3>
+                <i>PARIS</i>
+            </h3>
 
-    <h2><center>Images</center></h2>
-    <center><img src="https://images.pexels.com/photos/30379456/pexels-photo-30379456.jpeg" alt="Image" width="200" height="300">   </center>   
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991626110951!2d2.2919063764957555!3d48.85837007133209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1787330260382!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
-    <h2><center>Videos</center></h2>
+        </div>
 
-    <center><video controls width="320" height="240" >
-        <source src="https://www.pexels.com/download/video/19197245/" type="video/mp4">
-    </video></center>
 
-</body> 
+        <div class="map">
 
+            <h3>
+                <i>LONDON</i>
+            </h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.546653449616!2d-0.12439010982236735!3d51.50318629913268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sLondon%20Eye!5e0!3m2!1sen!2sin!4v1787330637517!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+
+        <div class="map">
+
+            <h3>
+                <i>TOKYO</i>
+            </h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747978645599!2d139.7405619845993!3d35.658580401931665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2sTokyo%20Tower!5e0!3m2!1sen!2sin!4v1787330600083!5m2!1sen!2sin"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+
+        <div class="map">
+
+            <h3>
+                <i>SEOUL</i>
+            </h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.957565941734!2d126.97217008518639!3d37.57961689993008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2sGyeongbokgung%20Palace!5e0!3m2!1sen!2sin!4v1787330557028!5m2!1sen!2sin"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+
+        <div class="map">
+
+            <h3>
+                <i>DUBAI</i>
+            </h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178654110291!2d55.27180147542485!3d25.197196977710963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sin!4v1787330446393!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+
+        <hr>
+
+
+        <!-- Images -->
+
+        <h2>Images</h2>
+
+        <img
+            src="https://images.pexels.com/photos/30379456/pexels-photo-30379456.jpeg"
+            alt="Travel Destination">
+
+
+        <hr>
+
+
+        <!-- Video -->
+
+        <h2>Videos</h2>
+
+        <video controls>
+
+            <source
+                src="https://www.pexels.com/download/video/19197245/"
+                type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+
+        <hr>
+
+
+        <!-- Useful Links -->
+
+        <h2>Useful Travel Links</h2>
+
+        <p>
+            <a href="https://www.google.com" target="_blank">
+                Google
+            </a>
+        </p>
+
+        <p>
+            <a href="https://www.google.com/maps" target="_blank">
+                Google Maps
+            </a>
+        </p>
+
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Travel Guide | Explore the World 🌍
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
