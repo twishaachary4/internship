@@ -1,0 +1,86 @@
+div {
+    background-color: transparent;
+    padding: 20px;
+}
+
+button {
+    background-color: #745f55;
+    border: none;
+    color: rgb(247, 247, 247);
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+}
+p{
+    font-size: 20px;
+}
+
+body {
+    background-color: #211812;
+    color: rgb(249, 228, 228);
+}
+
+.hero {
+    height: 100vh;
+
+    background-image: url("https://images.pexels.com/photos/36338002/pexels-photo-36338002.jpeg");
+    background-size: cover;
+    background-position: bottom;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu-card {
+    padding: 30px;
+    width: 220px;
+    background: #3a2921;
+    border-radius: 20px;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+.menu-card:hover {
+    transform: translateY(-15px);
+}
+table {
+    border-collapse: collapse !important;
+    border: 3px solid rgb(40, 39, 39) !important;
+    width: 80%;
+}
+
+th,
+td {
+    border: 3px solid rgb(32, 22, 22) !important;
+    padding: 15px !important;
+    background-color: #3a2921;
+    color: rgb(255, 191, 191);
+}
+footer {
+    background-color: #3a2921;
+    color: rgb(255, 191, 191);
+    text-align: center;
+    padding: 10px;
+    font-size: 5px;
+}
