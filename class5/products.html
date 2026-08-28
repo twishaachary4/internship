@@ -6,7 +6,8 @@
     <title>Document</title>
     <style>
         body{
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100vh;
             background-color: blanchedalmond;
 
             display: flex;
@@ -14,44 +15,64 @@
             gap: 25px;
             align-items: center;
             flex-wrap: wrap;
+            padding: 100px;
 
         }
         .products{
-            background-color: lightblue;
-            border: 8px solid rgb(131, 131, 189);
-            border-radius: 0%;
-            margin: 10px;
-            padding: 2 px
+            border: 1px solid black;
+            border-radius: 12px;
+            width: 250px;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+
+            text-align: center;
+
+            /* box-shadow: Xaxis YAxis Spread-Radius ColorName; */
+
+            box-shadow:    4px     4px       8px             black;
+        }
+        .products:hover{
+            background-color: beige;
+            transition: 1s;
+            transform: scale(1.02);
+            color: rgb(80, 40, 40);
+            height: 300px;
         }
         .products img{
-            width: 50%;
+            width: 100%;
             height: 50%;
             object-fit: cover;
+            border-radius: 12px;
+        }
+        .products button{
+            background-color: rgb(167, 151, 131);
+            padding: 10px;
+            border-radius: 12px;
+            border: none;
+            width: 90%;
         }
     </style>
 </head>
 <body>
-    <div class="products"><center>
+    <div class="products">
         <img src="https://images.pexels.com/photos/15592023/pexels-photo-15592023.jpeg" alt="image1" width="250px" height="200px">
         <h2>gaming controller</h2>
         <p>price: $49.99</p>
         <button>buy now</button>
-        </center>
     </div>
 
-    <div class="products"><center>
+    <div class="products">
         <img src="https://images.pexels.com/photos/35504606/pexels-photo-35504606.jpeg" alt="image2" width="250px" height="200px">
         <h2>keyboard</h2>
         <p>price: $39.99</p>
         <button>buy now</button>
-        </center>
     </div>
-    <div class="products"><center>
+    <div class="products">
         <img src="https://images.pexels.com/photos/14401665/pexels-photo-14401665.jpeg" alt="image3" width="250px" height="200px">
         <h2>mouse</h2>
         <p>price: $29.99</p>
         <button>buy now</button>
-        </center>
     </div>
 
 </body>
