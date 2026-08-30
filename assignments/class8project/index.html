@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-left">
+      <span class="logo">🗂️</span>
+      <div>
+        <h1>Employee Dashboard</h1>
+        <p class="tagline">Made by twisha acharya</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="stats">
+      <div class="stat-card">
+        <div class="stat-number">10</div>
+        <div class="stat-label">Total Employees</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">7</div>
+        <div class="stat-label">Active</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1</div>
+        <div class="stat-label">On Leave</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Offboarding</div>
+      </div>
+    </section>
+    <section class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>ID</th>
+            <th>Department</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Start Date</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#2C6FBB">AR</div>
+                <div>
+                  <div class="person-name">Anaya Rao</div>
+                  <div class="person-email">anaya.rao@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-101</td>
+            <td><span class="badge badge-Engineering">Engineering</span></td>
+            <td>Backend Engineer</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>14 Feb 2023</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#8A4FD6">DS</div>
+                <div>
+                  <div class="person-name">Devraj Shetty</div>
+                  <div class="person-email">devraj.shetty@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-102</td>
+            <td><span class="badge badge-Design">Design</span></td>
+            <td>Product Designer</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>01 Nov 2022</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#C7841A">MK</div>
+                <div>
+                  <div class="person-name">Meera Kulkarni</div>
+                  <div class="person-email">meera.kulkarni@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-103</td>
+            <td><span class="badge badge-Operations">Operations</span></td>
+            <td>Ops Coordinator</td>
+            <td><span class="badge status-OnLeave">On Leave</span></td>
+            <td>19 Jun 2021</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#D6604F">IS</div>
+                <div>
+                  <div class="person-name">Ibrahim Sait</div>
+                  <div class="person-email">ibrahim.sait@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-104</td>
+            <td><span class="badge badge-Sales">Sales</span></td>
+            <td>Account Executive</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>08 Jan 2024</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#1F9D63">PN</div>
+                <div>
+                  <div class="person-name">Priya Nair</div>
+                  <div class="person-email">priya.nair@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-105</td>
+            <td><span class="badge badge-Finance">Finance</span></td>
+            <td>Financial Analyst</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>23 Sep 2020</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#2C6FBB">RV</div>
+                <div>
+                  <div class="person-name">Rohit Verma</div>
+                  <div class="person-email">rohit.verma@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-106</td>
+            <td><span class="badge badge-Engineering">Engineering</span></td>
+            <td>Frontend Engineer</td>
+            <td><span class="badge status-Offboarding">Offboarding</span></td>
+            <td>30 Mar 2022</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#8A4FD6">SF</div>
+                <div>
+                  <div class="person-name">Sana Fernandes</div>
+                  <div class="person-email">sana.fernandes@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-107</td>
+            <td><span class="badge badge-Design">Design</span></td>
+            <td>UX Researcher</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>11 Jul 2023</td>
+          </tr>
+           <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#8A4FD6">DS</div>
+                <div>
+                  <div class="person-name">Mythili Shetty</div>
+                  <div class="person-email">mythili.shetty@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-108</td>
+            <td><span class="badge badge-Design">Design</span></td>
+            <td>Product Designer</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>01 Nov 2021</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#2C6FBB">AR</div>
+                <div>
+                  <div class="person-name">Prinson Pinto</div>
+                  <div class="person-email">prinson.pinto@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-101</td>
+            <td><span class="badge badge-Engineering">Engineering</span></td>
+            <td>Fullstack Engineer</td>
+            <td><span class="badge status-Active">Active</span></td>
+            <td>14 Feb 2020</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="person">
+                <div class="avatar" style="background:#2C6FBB">RV</div>
+                <div>
+                  <div class="person-name">Lenstar Monteiro</div>
+                  <div class="person-email">lenstar.monteiro@company.com</div>
+                </div>
+              </div>
+            </td>
+            <td>EMP-110</td>
+            <td><span class="badge badge-Engineering">Engineering</span></td>
+            <td>Frontend Engineer</td>
+            <td><span class="badge status-Offboarding">Offboarding</span></td>
+            <td>30 Mar 2024</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <p class="footer-note">
+      build by twisha acharya, the admin and manager of this website.
+    </p>
+  </main>
+
+</body>
+</html>
