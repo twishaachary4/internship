@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function first(status,callback){
+            console.log("Payment to be done " + status)
+            callback("$2000",function(){
+                console.log("Payment Done")
+            })
+        }
+        first("for coffee", function(status2,callback){
+            console.log("Payment amount: ",status2)
+            callback()
+        })
+    </script>
+
+</body>
+</html>
