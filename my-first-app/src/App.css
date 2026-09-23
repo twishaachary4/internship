@@ -158,7 +158,7 @@ h1 {
   width: 20px;
   height: 20px;
   border: 2px solid var(--ink);
-  background: white;
+  background: rgb(244, 199, 199);
   cursor: pointer;
   margin: 0;
 }
