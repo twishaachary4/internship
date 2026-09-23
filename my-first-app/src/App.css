@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --paper: #f4efe6;
+  --ink: #1a1a1a;
+  --accent: #e4572e;
+  --line: #d6cfc2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+/* HEADER */
+header {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+.date {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.05;
+}
+
+.name {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 56px;
+  width: 100%;
+  max-width: 320px;
+  border: none;
+  border-bottom: 2px dashed var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
+  outline: none;
+}
+
+.name:focus {
+  border-bottom-color: var(--accent);
+}
+
+.count {
+  margin: 12px 0 0;
+  color: #777;
+}
+
+/* ADD FORM */
+.add {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.add input {
+  flex: 1;
+  padding: 14px;
+  border: 2px solid var(--ink);
+  border-right: none;
+  background: white;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.add button {
+  padding: 0 24px;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.add button:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 4px 0;
+  font-family: inherit;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.on {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+/* LIST */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.item span {
+  flex: 1;
+}
+
+.item.done span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.item input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--ink);
+  background: white;
+  cursor: pointer;
+  margin: 0;
+}
+
+.item input[type="checkbox"]:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.remove {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.remove:hover {
+  color: var(--accent);
+}
+
+.empty {
+  color: #999;
+  padding: 24px 0;
+}
+
+.clear {
+  margin-top: 24px;
+  background: none;
+  border: 2px solid var(--ink);
+  padding: 10px 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.clear:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.greet {
+  margin-top: 16px;
+  background: none;
+  border: 2px solid var(--ink);
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.greet:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
