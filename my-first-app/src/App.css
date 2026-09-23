@@ -3,7 +3,7 @@
 :root {
   --paper: #f4efe6;
   --ink: #1a1a1a;
-  --accent: #e4572e;
+  --accent: #916e64;
   --line: #d6cfc2;
 }
 
@@ -68,7 +68,7 @@ h1 {
 
 .count {
   margin: 12px 0 0;
-  color: #777;
+  color: #c3bfbf;
 }
 
 /* ADD FORM */
